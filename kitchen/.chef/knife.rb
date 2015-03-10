@@ -1,5 +1,7 @@
 require 'librarian/chef/integration/knife'
-cookbook_path Librarian::Chef.install_path, "site-cookbooks"
+site_cookbooks = File.expand_path("../../site-cookbooks", __FILE__)
+
+cookbook_path Librarian::Chef.install_path, site_cookbooks
 node_path        "nodes"
 role_path        "roles"
 environment_path "environments"

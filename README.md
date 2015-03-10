@@ -13,6 +13,7 @@ List of Vagrant boxes: https://atlas.hashicorp.com/boxes/search
 </li>
 <li>Prepare
 
+        cd kitchen
         knife solo prepare vagrant@127.0.0.1 -p 2222 -i /Users/$USER/.vagrant.d/insecure_private_key
 </li>
 <li>Cook
