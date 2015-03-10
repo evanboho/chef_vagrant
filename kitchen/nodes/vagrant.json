@@ -2,5 +2,9 @@
   "user": {
     "name": "vagrant"
   },
-  "run_list": ["recipe[ruby]", "recipe[apache2]"]
+  "run_list": [
+    "recipe[ruby]",
+    "recipe[apache2]", "recipe[apache2::mod_proxy]",
+    "recipe[main]"
+  ]
 }
