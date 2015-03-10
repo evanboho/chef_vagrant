@@ -1,0 +1,6 @@
+{
+  "user": {
+    "name": "vagrant"
+  },
+  "run_list": ["recipe[ruby]", "recipe[apache2]"]
+}
